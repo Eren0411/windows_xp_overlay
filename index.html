@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Windows 95 Twitch Overlay</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Escritorio -->
+  <div id="desktop">
+
+    <!-- Ventana Chat -->
+    <div class="window" style="top: 40px; left: 40px;">
+      <div class="title-bar">
+        <span>Chat.exe</span>
+        <div class="buttons">
+          <button>_</button>
+          <button>□</button>
+          <button>X</button>
+        </div>
+      </div>
+      <div class="window-body">
+        <iframe
+          src="https://www.twitch.tv/embed/TU_CANAL/chat?parent=localhost"
+          frameborder="0">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Ventana Cámara -->
+    <div class="window" style="top: 40px; left: 420px; width: 320px;">
+      <div class="title-bar">
+        <span>Cam.exe</span>
+        <div class="buttons">
+          <button>_</button>
+          <button>□</button>
+          <button>X</button>
+        </div>
+      </div>
+      <div class="window-body cam-placeholder">
+        CAM
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Barra de tareas -->
+  <div class="taskbar">
+    <button class="start">Start</button>
+    <span class="clock" id="clock">00:00</span>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
