@@ -1,0 +1,104 @@
+/* Fondo escritorio */
+body {
+  margin: 0;
+  background: #008080;
+  font-family: Tahoma, Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Escritorio */
+#desktop {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+/* Ventana */
+.window {
+  position: absolute;
+  width: 360px;
+  background: #c0c0c0;
+  border: 2px solid black;
+  box-shadow:
+    inset -2px -2px #808080,
+    inset 2px 2px #ffffff;
+}
+
+/* Barra superior */
+.title-bar {
+  background: linear-gradient(to right, #000080, #1084d0);
+  color: white;
+  padding: 4px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: move;
+  user-select: none;
+}
+
+.title-bar span {
+  font-size: 14px;
+}
+
+/* Botones */
+.buttons button {
+  width: 18px;
+  height: 18px;
+  margin-left: 2px;
+  background: #c0c0c0;
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Cuerpo ventana */
+.window-body {
+  background: #ffffff;
+  height: 220px;
+  border-top: 2px solid #808080;
+}
+
+.window-body iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Placeholder cámara */
+.cam-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  color: lime;
+  font-size: 20px;
+}
+
+/* Barra de tareas */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 36px;
+  width: 100%;
+  background: #c0c0c0;
+  border-top: 2px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8px;
+}
+
+/* Start */
+.start {
+  background: #c0c0c0;
+  border: 2px solid black;
+  padding: 4px 10px;
+  font-weight: bold;
+}
+
+/* Reloj */
+.clock {
+  font-size: 14px;
+}
+
